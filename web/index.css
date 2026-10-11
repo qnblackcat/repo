@@ -527,6 +527,8 @@ a {
 }
 
 .section_title {
+    /* Shrink to the text so the accent line below matches the title's width. */
+    width: fit-content;
     font-size: 27px;
     font-weight: 800;
     letter-spacing: -0.3px;
@@ -625,11 +627,11 @@ a {
     font-style: italic;
 }
 
-/* Short accent line under section titles. */
+/* Accent line under section titles, as wide as the title. */
 .section_title:after {
     content: "";
     display: block;
-    width: 36px;
+    width: 100%;
     height: 3px;
     margin-top: 8px;
     border-radius: 2px;
