@@ -337,13 +337,20 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--muted);
 }
 
+.cell {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--card-border);
+}
+
 .cell > .title {
-    float: left;
     color: var(--muted);
 }
 
 .cell > .text {
-    float: right;
+    text-align: right;
 }
 
 h3 {
@@ -460,11 +467,17 @@ a {
     padding-bottom: 10px;
 }
 
+.table-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
 .table-btn:after {
     content: "›";
-    font-size:30px;
-    transform: translateY(-40px);
-    float: right;
+    font-size: 26px;
+    line-height: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -513,4 +526,12 @@ a {
 
 .section .recent {
     margin-bottom: 0;
+}
+
+.section .md_view p:last-child, .section .changelog_entry:last-child {
+    margin-bottom: 0;
+}
+
+.section .scroll_view + .md_view {
+    margin-top: 10px;
 }
