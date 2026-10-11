@@ -254,9 +254,11 @@ h1, h2, h3, h4, h5, h6, p {
     color: white !important;
 }
 
-.add_btn svg {
-    width: 16px;
-    height: 16px;
+.add_btn_icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    margin-right: 2px;
 }
 
 .add_btn_sileo {
