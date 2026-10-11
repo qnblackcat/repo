@@ -1,0 +1,12 @@
+Origin: Qn_ beta
+Label: Qn_ beta
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm64 iphoneos-arm64e
+Components: main
+Description: Test repo for Silica beta
+
+SHA256:
+ 7d4ce6ef8f7d0b5cc5a7190a803b5ff77352f9536ec52d606aebfd6e2dd6c78e 796 Packages.bz2
+ 972f41bf855efd465978144ebedeae42f875a630343d3230baa4bba1447f906d 696 Packages.xz
