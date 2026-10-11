@@ -2,6 +2,39 @@
     margin: 0;
 }
 
+/* Warm cream theme. */
+:root {
+    --bg: #FAF7F2;
+    --text: #2B2622;
+    --muted: #8C8278;
+    --chip: #EFE8DD;
+    --chip-text: #5C534A;
+    --zebra: #2B2622;
+    --zebra-text: #FAF7F2;
+    --link: #A65A24;
+}
+
+/* Dark: the system setting, or Sileo's dark mode (set by index.js). */
+:root.dark {
+    --bg: #1A1816;
+    --text: #EDE6DD;
+    --muted: #9C9288;
+    --chip: #2A2622;
+    --chip-text: #BDB3A8;
+    --zebra: #EDE6DD;
+    --zebra-text: #1A1816;
+    --link: #E3A066;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+a, .tint {
+    color: var(--link);
+}
+
 .body {
     font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
     margin-top: 20px;
@@ -34,7 +67,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .caption {
-    color: #bbb;
+    color: var(--muted);
     font-size: 16px;
 }
 
@@ -116,7 +149,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .repo_desc {
-    color: #888;
+    color: var(--muted);
     margin-top: 4px;
 }
 
@@ -149,7 +182,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .add_btn_zebra {
-    background: #1c1c1e;
+    background: var(--zebra);
+    color: var(--zebra-text) !important;
 }
 
 .repo_url_row {
@@ -166,8 +200,8 @@ h1, h2, h3, h4, h5, h6, p {
     text-overflow: ellipsis;
     white-space: nowrap;
     font-size: 13px;
-    color: #888;
-    background: #f2f2f7;
+    color: var(--muted);
+    background: var(--chip);
     padding: 7px 10px;
     border-radius: 8px;
 }
@@ -176,8 +210,8 @@ h1, h2, h3, h4, h5, h6, p {
     font: inherit;
     font-size: 13px;
     font-weight: 600;
-    color: #555;
-    background: #f2f2f7;
+    color: var(--chip-text);
+    background: var(--chip);
     border: none;
     padding: 7px 12px;
     border-radius: 8px;
@@ -212,12 +246,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .package_caption {
     margin-top: 7px;
-    color: #999;
+    color: var(--muted);
 }
 
 .cell > .title {
     float: left;
-    color: #999;
+    color: var(--muted);
 }
 
 .cell > .text {
@@ -235,7 +269,7 @@ h3 {
 
 .subtle_link, .subtle_link p, .subtle_link span {
     text-decoration: none;
-    color: black;
+    color: var(--text);
 }
 
 .variants {
@@ -247,11 +281,11 @@ h3 {
     display: inline-block;
     font-size: 13px;
     font-weight: 600;
-    color: #888;
+    color: var(--chip-text);
+    background: var(--chip);
     padding: 2px 9px;
     margin-right: 6px;
     border-radius: 11px;
-    border: 1px solid #ccc;
 }
 
 .recent {
@@ -278,7 +312,7 @@ h3 {
 }
 
 .recent_meta {
-    color: #999 !important;
+    color: var(--muted) !important;
     font-size: 14px;
 }
 
@@ -319,7 +353,7 @@ h3 {
     width: 50%;
     display:inline;
     text-align: center;
-    color: #999;
+    color: var(--muted);
     font-weight: 500;
     padding-bottom: 10px;
     cursor: pointer;
@@ -346,22 +380,14 @@ a {
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        background: #161616;
-        color: white;
-    }
-
-    .subtle_link, .subtle_link p, .subtle_link span {
-        color: white;
-    }
-
-    .add_btn_zebra {
-        background: #f2f2f7;
-        color: black !important;
-    }
-
-    .repo_url, .pill_btn {
-        background: #2c2c2e;
-        color: #aaa;
+    :root {
+        --bg: #1A1816;
+        --text: #EDE6DD;
+        --muted: #9C9288;
+        --chip: #2A2622;
+        --chip-text: #BDB3A8;
+        --zebra: #EDE6DD;
+        --zebra-text: #1A1816;
+        --link: #E3A066;
     }
 }
