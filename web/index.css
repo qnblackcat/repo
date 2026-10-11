@@ -232,6 +232,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .repo_desc {
+    font-style: italic;
     color: rgba(255, 255, 255, 0.85);
     margin: 4px 0 0;
 }
