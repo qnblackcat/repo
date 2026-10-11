@@ -8,5 +8,5 @@ Components: main
 Description: Test repo for Silica beta
 
 SHA256:
- 07a83c62117f8670fcc7d712f9f3b427472e575b9460e1d457827b900c48c0c2 785 Packages.bz2
- 342e3cb4722f2fe5cac52ccbd4e71af87c1474e53374ec6e76f141bd8c5160e1 688 Packages.xz
+ ba812ad5858ae50adde65992a6b7a1d76fc920c625d4b618349bd5668a563816 1229 Packages.bz2
+ e0317afa38720e99fff3fd9574baae81559b24da97f08a5bf3006c21d265f958 1056 Packages.xz
