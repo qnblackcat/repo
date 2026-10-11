@@ -176,10 +176,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .hero_links {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    /* Above the prompt and title, which also span the card's width. */
+    z-index: 2;
+    top: 12px;
+    right: 12px;
     display: flex;
-    gap: 8px;
+    gap: 0;
 }
 
 .hero_link {
@@ -188,8 +190,10 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: center;
     width: 36px;
     height: 36px;
+    /* The transparent border widens the tap target to 44px without changing the look. */
+    border: 4px solid transparent;
+    background: rgba(255, 255, 255, 0.18) padding-box;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.18);
     color: white !important;
 }
 
