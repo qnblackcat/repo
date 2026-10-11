@@ -597,3 +597,12 @@ a {
     text-align: center;
     padding: 10px 0;
 }
+
+.footer p {
+    margin: 4px 0;
+}
+
+.footer_terminal {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 13px;
+}
