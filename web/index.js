@@ -30,17 +30,40 @@ function copyRepoURL(button, url) {
     });
 }
 
-// Packages search: keeps packages whose name contains the query, ignoring case.
-function filterPackages(query) {
-    query = query.trim().toLowerCase();
+// Packages list: only the first few packages are shown until "Show more" is tapped. While searching, every
+// package whose name contains the query (ignoring case) is shown.
+var PACKAGES_PREVIEW = 6;
+var packagesExpanded = false;
+
+function updatePackages() {
+    var query = document.querySelector(".package_search").value.trim().toLowerCase();
     var packages = document.querySelectorAll(".packageList > .package");
-    var shown = 0;
+    var matches = 0;
     for (var i = 0; i < packages.length; i++) {
         var match = packages[i].getAttribute("data-name").toLowerCase().indexOf(query) != -1;
-        packages[i].hidden = !match;
         if (match) {
-            shown++;
+            matches++;
         }
+        packages[i].hidden = !match || (!query && !packagesExpanded && matches > PACKAGES_PREVIEW);
     }
-    document.querySelector(".no_results").hidden = shown > 0;
+    document.querySelector(".no_results").hidden = matches > 0;
+    var button = document.querySelector(".show_more");
+    button.hidden = query !== "" || packages.length <= PACKAGES_PREVIEW;
+    button.textContent = packagesExpanded ? "Show less" : "Show more (" + (packages.length - PACKAGES_PREVIEW) + ")";
+}
+
+function filterPackages() {
+    updatePackages();
+}
+
+function toggleShowMore() {
+    packagesExpanded = !packagesExpanded;
+    updatePackages();
+    if (!packagesExpanded) {
+        document.querySelector(".packageList").scrollIntoView({block: "start"});
+    }
+}
+
+if (document.querySelector(".packageList")) {
+    updatePackages();
 }
