@@ -345,8 +345,19 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--muted);
 }
 
+.cell > .title {
+    white-space: nowrap;
+}
+
 .cell > .text {
     text-align: right;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.cell > .mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 14px;
 }
 
 h3 {
