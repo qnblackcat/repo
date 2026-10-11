@@ -44,7 +44,7 @@ a, .tint {
 }
 
 .body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", sans-serif;
+    font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
     margin-top: 20px;
     margin-bottom: 20px;
 
@@ -455,7 +455,7 @@ h3 {
 .nav {
     display: flex;
     gap: 4px;
-    margin: 20px 0 0;
+    margin: 16px 0 0;
     padding: 4px;
     background: var(--card);
     border: 1px solid var(--card-border);
@@ -659,4 +659,45 @@ a {
 
 .show_more[hidden] {
     display: none;
+}
+
+/* Monospace is wider than the system font: smaller sizes so names and rows still fit on a phone. */
+.package_name {
+    font-size: 17px;
+    overflow-wrap: anywhere;
+}
+
+.package_caption {
+    font-size: 13px;
+}
+
+.section_title {
+    font-size: 23px;
+}
+
+.add_btn {
+    font-size: 14px;
+}
+
+.recent_name {
+    font-size: 14px;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.recent_meta {
+    font-size: 11px;
+    white-space: nowrap;
+    margin-left: 8px;
+}
+
+.repo_desc {
+    font-size: 14px;
+}
+
+/* Tweak pages: keep the Details/Changelog tabs close to the icon and name. */
+.package_head {
+    margin-bottom: 0;
 }
