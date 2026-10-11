@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qn_</title>
+    <link>https://qnblackcat.github.io/repo/</link>
+    <description>Rootless &amp; roothide ports of useful tweaks, maintained by Qn</description>
+    <atom:link href="https://qnblackcat.github.io/repo/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>CCCalc 2.2.0</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/ai.paisseon.cccalc_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">ai.paisseon.cccalc@2.2.0</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Rebuilt for rootful, rootless and roothide; Qn added to the credits.&lt;/li&gt;
+&lt;li&gt;No functional changes since 2.1.0.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>DateLyrics 3.0.7</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.shalamand3r.datelyrics_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.shalamand3r.datelyrics@3.0.7</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Fixed Music crashing on iOS 16 when lyric timings or the playback position were invalid (NaN), e.g. while the queue reloads.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>PleaseKeepLPM 1.0.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.qn.plzkeeplpm_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.qn.plzkeeplpm@1.0.1</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Fixed SpringBoard crashing when PleaseKeepLPM turned Low Power Mode back on.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>SafariBlocker 1.3.5</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.p2kdev.safariblocker_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.p2kdev.safariblocker@1.3.5</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Tabs you open yourself (e.g. SafariPicker's &amp;quot;Open in Private/Normal Mode&amp;quot;) are no longer blocked; web pop-ups are still checked.&lt;/li&gt;
+&lt;li&gt;New Source Code section in settings.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>SafariPicker 1.1.0</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.qn.safaripicker_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.qn.safaripicker@1.1.0</guid>
+      <pubDate>Sun, 11 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;New &amp;quot;Source Code&amp;quot; button in settings.&lt;/li&gt;
+&lt;li&gt;New settings icon.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>AutoPickUp 1.0.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.qn.autopickup_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.qn.autopickup@1.0.1</guid>
+      <pubDate>Sat, 10 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;New: Answer with Volume Buttons. Press volume up or down to answer a ringing call instead of silencing it, for every app, even if its Auto Answer is off. Useful when the touchscreen doesn't work.&lt;/li&gt;
+&lt;li&gt;Speaker option now also applies to calls answered with the volume buttons.&lt;/li&gt;
+&lt;li&gt;Answer delay range is now 0–30 seconds (default 10).&lt;/li&gt;
+&lt;li&gt;Code cleanup.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>PassBy 1.9.4</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.giorgioiavicoli.passby_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.giorgioiavicoli.passby@1.9.4</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;The unlock toast now also shows &amp;quot;PassBy: Magic passcode&amp;quot; every time you unlock with the magic passcode (setting renamed to &amp;quot;Show unlock toast&amp;quot;).&lt;/li&gt;
+&lt;li&gt;Magic passcode unlocks are confirmed against the real lock state, since the unlock can finish asynchronously.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>TapTapSlumber 0.0.7</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/cc.igerman.taptapslumber_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">cc.igerman.taptapslumber@0.0.7</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Roothide build, source reconstructed from TapTapSlumber 0.0.3 by iGerman.&lt;/li&gt;
+&lt;li&gt;Double-tap empty space on the Home Screen, or the Lock Screen (including the passcode page), to lock the device.&lt;/li&gt;
+&lt;li&gt;New: Ignore Taps on Keypad, so typing a passcode quickly (e.g. &amp;quot;11&amp;quot;) won't lock the device. Applies immediately; changing Home Screen / Lock Screen needs a respring.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>TrueLink 0.0.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.qn.truelink_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.qn.truelink@0.0.1</guid>
+      <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Initial release, inspired by CleanCopy by b4db1r3.&lt;/li&gt;
+&lt;li&gt;Resolves short links (Google &lt;code&gt;/goto?url=&lt;/code&gt;, Reddit &lt;code&gt;/s/&lt;/code&gt;, &lt;code&gt;amzn.to&lt;/code&gt;) to the real destination without opening the page.&lt;/li&gt;
+&lt;li&gt;Unwraps redirects (&lt;code&gt;google.com/url?q=&lt;/code&gt;, Google Ads, Facebook &lt;code&gt;l.php&lt;/code&gt;, LinkedIn).&lt;/li&gt;
+&lt;li&gt;Strips tracking parameters (&lt;code&gt;utm_*&lt;/code&gt;, &lt;code&gt;fbclid&lt;/code&gt;, &lt;code&gt;gclid&lt;/code&gt;, &lt;code&gt;si&lt;/code&gt;…) and share junk from Google, YouTube, Facebook, Instagram, Threads, X, Reddit, LinkedIn and Spotify.&lt;/li&gt;
+&lt;li&gt;Shortens Amazon links to &lt;code&gt;/dp/&amp;lt;ASIN&amp;gt;&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Works system-wide, including links inside copied text. If resolving a short link fails or takes over 4 s, the original link is copied.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>FlicksForAll 0.2.2</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/org.wuffs.flickplus_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">org.wuffs.flickplus@0.2.2</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Re-tuned Flick Sensitivity presets: they are now evenly spaced, and the lowest setting no longer makes flicks nearly impossible to trigger.&lt;/li&gt;
+&lt;li&gt;Settings: icons on each section, clearer descriptions (all settings below the test text field take effect immediately), copyright footer.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>LSNowPlayingRepeat 1.3.0</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.qn.lsnowplayingrepeat_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.qn.lsnowplayingrepeat@1.3.0</guid>
+      <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;iOS 16 support: on iOS 16.0–17.0.x the Repeat button replaces the audio output button, and long-press opens the output picker.&lt;/li&gt;
+&lt;li&gt;iOS 17.1+ unchanged: replaces Favorite, long-press toggles Favorite.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>SlideCutPlus 1.0.2</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.qn.slidecutplus_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.qn.slidecutplus@1.0.2</guid>
+      <pubDate>Mon, 05 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Initial release: a rewrite of SlideCut for iOS 15+ (replaces SlideCut).&lt;/li&gt;
+&lt;li&gt;Touch the space key, slide to a letter and release to trigger a shortcut: X/C/V cut/copy/paste, A select all, Z/Y undo/redo, H J K L arrows, N/M previous/next word, S select word, Q/P start/end of line, B/E start/end of document, D translate, Delete removes the previous word.&lt;/li&gt;
+&lt;li&gt;Better Vietnamese Telex support: the letter no longer reaches the input method, so shortcuts never add diacritics to the current word.&lt;/li&gt;
+&lt;li&gt;Space+N moves to right after the previous word; Space+V adds a trailing space after pasting.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>BetterTelex 0.2.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.qn.bettertelex_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.qn.bettertelex@0.2.1</guid>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Experimental iOS 14 support (untested on real devices; falls back to stock keyboard behaviour if it can't read the composition state).&lt;/li&gt;
+&lt;li&gt;Rootless and rootful builds available alongside roothide.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>BadgeSync 1.2.2</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.newwares.badgesync.html</link>
+      <guid isPermaLink="false">com.newwares.badgesync@1.2.2</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Axon compatibility.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>CalculatorHistory 1.3</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.fiore.calculatorhistory.html</link>
+      <guid isPermaLink="false">com.fiore.calculatorhistory@1.3</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;New tap and long-press interactions on history entries.&lt;/li&gt;
+&lt;li&gt;Localizations.&lt;/li&gt;
+&lt;li&gt;Separators are hidden for empty rows.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>CCDNDTimer 1.3.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.0xkuj.ccdndtimer_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.0xkuj.ccdndtimer@1.3.1</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Default timer is now 60 minutes.&lt;/li&gt;
+&lt;li&gt;Code cleanup, roothide build.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>ChatGBeFree 1.0.0</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.liam.chatgbefree.html</link>
+      <guid isPermaLink="false">com.liam.chatgbefree@1.0.0</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Initial release.&lt;/li&gt;
+&lt;li&gt;Bypasses the &amp;quot;This version of ChatGPT has been sunset&amp;quot; screen on older iOS versions by spoofing the app version.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>DeleteForeverXS 1.2.6</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.p2kdev.deleteforeverxs_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.p2kdev.deleteforeverxs@1.2.6</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Support iOS 17 (Photos and Camera): permanently delete photos without leaving them in Recently Deleted. Roothide build.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>DePuke 1.0.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.dnullptr.depuke_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.dnullptr.depuke@1.0.1</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;New Control Center module (via CCSupport) to toggle motion cues on the fly.&lt;/li&gt;
+&lt;li&gt;New settings pane with respring and reset buttons.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>EmoZoom 1.0.2</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.ps.emozoom.html</link>
+      <guid isPermaLink="false">com.ps.emozoom@1.0.2</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Emojis in the variants popup are no longer resized.&lt;/li&gt;
+&lt;li&gt;Fixed vertical and horizontal spacing being swapped.&lt;/li&gt;
+&lt;li&gt;Long emojis no longer get truncated.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>FloatingDockXVI 2.4</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.nahtedetihw.floatingdockxvi_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.nahtedetihw.floatingdockxvi@2.4</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;iOS 17 and roothide support.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>MoreComplications 1.0.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/xyz.skitty.morecomplications_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">xyz.skitty.morecomplications@1.0.1</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;iOS 17 and roothide support.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>NoPastedFrom 0.0.2</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.brend0n.nopastedfrom_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.brend0n.nopastedfrom@0.0.2</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;iOS 17 support.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>ReplayKit Max 1.0.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.ps.replaykitmax.html</link>
+      <guid isPermaLink="false">com.ps.replaykitmax@1.0.1</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Record screen without resolution cap.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>SafariFind 1.1.4</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.p2kdev.safarifind_iphoneos-arm64.html</link>
+      <guid isPermaLink="false">com.p2kdev.safarifind@1.1.4</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;ul&gt;
+&lt;li&gt;Rebuilt from 1.1.2 for rootless and roothide.&lt;/li&gt;
+&lt;li&gt;iOS 17 fix: long-press the Share button to open Find on Page.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    <item>
+      <title>SmoothCursor (iOS 13+) 0.0.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.ps.smoothcursorios13.html</link>
+      <guid isPermaLink="false">com.ps.smoothcursorios13@0.0.1</guid>
+      <pubDate>Sat, 03 Oct 2026 00:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Office 2013-styled cursor animation.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>CCNoiseControl 0.0.4</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.brend0n.ccnoisecontrol.html</link>
+      <guid isPermaLink="false">com.brend0n.ccnoisecontrol@0.0.4</guid>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <description>&lt;p&gt;A Control Center Module to switch NoiseCancellation/Transparency. (Airpods Pro/Max)
+A Control Center Module to switch NoiseCancellation/Transparency. (Airpods Pro/Max)
+0.0.4: Fix glyph color not updated when no device connected. Properly update status when not caused by Module itself.
+0.0.3: Add NC/Off Module. Add transition animation. Add Settings Icon.
+0.0.2: Fix icon on iOS 13&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>DarkPods 2.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.icraze.darkpods.html</link>
+      <guid isPermaLink="false">com.icraze.darkpods@2.1</guid>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Backport the iOS 17 AirPods popup to iOS 14-16&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>EZSwipe 1.1.1</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.imkpatil.ezswipe.html</link>
+      <guid isPermaLink="false">com.imkpatil.ezswipe@1.1.1</guid>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Give your hand a rest by using gestures instead!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>IMRead 1.2.3</title>
+      <link>https://qnblackcat.github.io/repo/depiction/web/com.3h6-1.imread.html</link>
+      <guid isPermaLink="false">com.3h6-1.imread@1.2.3</guid>
+      <pubDate>Sun, 22 Feb 2026 00:00:00 +0000</pubDate>
+      <description>&lt;p&gt;Automatically marks messages as read after clearing their notifications&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>

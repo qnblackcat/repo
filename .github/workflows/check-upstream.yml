@@ -1,0 +1,24 @@
+name: Check upstream versions
+
+on:
+  schedule:
+    - cron: "0 2 * * 1" # Mondays 02:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            api
+      - name: Compare with upstream and open issues
+        run: python3 .github/scripts/check_upstream.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

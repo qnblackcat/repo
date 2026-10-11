@@ -37,8 +37,8 @@ function darkMode(isOled) {
     var darkColor = isOled ? "black" : "#161616";
     document.querySelector("body").style.color = "white";
     document.querySelector("body").style.background = darkColor;
-    for (var i = document.querySelectorAll(".subtle_link, .subtle_link > div > div, .subtle_link > div > div > p").length - 1; i >= 0; i--) {
-        document.querySelectorAll(".subtle_link, .subtle_link > div > div, .subtle_link > div > div > p")[i].style.color = "white";
+    for (var i = document.querySelectorAll(".subtle_link, .subtle_link p, .subtle_link span").length - 1; i >= 0; i--) {
+        document.querySelectorAll(".subtle_link, .subtle_link p, .subtle_link span")[i].style.color = "white";
     }
 }
 if (navigator.userAgent.toLowerCase().indexOf("dark") != -1) {

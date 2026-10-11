@@ -119,9 +119,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .package {
     margin-bottom: 40px;
+    display: flow-root;
 }
 
-.package > img {
+.package > img, .package > a > img, .recent_row > img {
     border-radius: 20px;
     width: 75px;
     height: 75px;
@@ -160,9 +161,63 @@ h3 {
     margin-top: 20px;
 }
 
-.subtle_link, .subtle_link > div > div, .subtle_link > div > div > p {
+.subtle_link, .subtle_link p, .subtle_link span {
     text-decoration: none;
     color: black;
+}
+
+.variants {
+    margin-left: 90px;
+    margin-top: 8px;
+}
+
+.variant_switch {
+    margin: -5px 0 0;
+    text-align: center;
+}
+
+.variant_pill {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 3px 10px;
+    margin-right: 6px;
+    border-radius: 12px;
+    border: 1px solid currentColor;
+    opacity: 0.55;
+}
+
+.variant_pill.active_pill {
+    border-width: 2px;
+    opacity: 1;
+}
+
+.recent {
+    margin-bottom: 10px;
+}
+
+.recent_row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.recent_row > img {
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 9px !important;
+    float: none !important;
+    margin-right: 12px;
+}
+
+.recent_name {
+    font-weight: 600;
+    flex: 1;
+}
+
+.recent_meta {
+    color: #999 !important;
+    font-size: 14px;
 }
 
 .subtle_link:hover, .subtle_link > *:hover {
@@ -234,7 +289,7 @@ a {
         color: white;
     }
 
-    .subtle_link, .subtle_link > div > div, .subtle_link > div > div > p {
+    .subtle_link, .subtle_link p, .subtle_link span {
         color: white;
     }
 }
