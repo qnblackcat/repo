@@ -2,34 +2,36 @@
     margin: 0;
 }
 
-/* Warm cream theme. */
+/* Light blue theme, after the default Silica icon. */
 :root {
-    --bg: #FAF7F2;
-    --text: #2B2622;
-    --muted: #8C8278;
-    --chip: #EFE8DD;
-    --chip-text: #5C534A;
-    --sileo: linear-gradient(135deg, #D98A4E, #A9472E);
-    --zebra: linear-gradient(135deg, #6B5544, #2B2622);
-    --zebra-text: #FAF7F2;
-    --link: #A65A24;
-    --card: #FFFDF9;
-    --card-border: #EDE5D8;
+    --bg: #EEF6FD;
+    --text: #14304A;
+    --muted: #6B8199;
+    --chip: #DDEBF8;
+    --chip-text: #3E5A75;
+    --sileo: linear-gradient(135deg, #2EB6FF, #3D8BE8);
+    --zebra: linear-gradient(135deg, #2F5478, #14304A);
+    --zebra-text: #FFFFFF;
+    --link: #1F7FD1;
+    --card: #FFFFFF;
+    --card-border: #D7E7F5;
+    --hero: linear-gradient(135deg, #22B2FF, #3D86E0);
 }
 
 /* Dark: the system setting, or Sileo's dark mode (set by index.js). */
 :root.dark {
-    --bg: #1A1816;
-    --text: #EDE6DD;
-    --muted: #9C9288;
-    --chip: #2A2622;
-    --chip-text: #BDB3A8;
-    --sileo: linear-gradient(135deg, #E9A56B, #C25E3A);
-    --zebra: linear-gradient(135deg, #F3ECE2, #D2C3B0);
-    --zebra-text: #2B2622;
-    --link: #E3A066;
-    --card: #24211E;
-    --card-border: #322D28;
+    --bg: #0E1A26;
+    --text: #E3EEF8;
+    --muted: #8EA3B8;
+    --chip: #1A2B3B;
+    --chip-text: #B5C7D8;
+    --sileo: linear-gradient(135deg, #3CC0FF, #2F7FD8);
+    --zebra: linear-gradient(135deg, #EAF4FC, #C3D9EC);
+    --zebra-text: #14304A;
+    --link: #5EC2FF;
+    --card: #142333;
+    --card-border: #1F3346;
+    --hero: linear-gradient(135deg, #1A9BE6, #2F6FC4);
 }
 
 body {
@@ -143,7 +145,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 24px;
     padding: 24px 20px 22px;
     border-radius: 20px;
-    background: linear-gradient(135deg, #C9743F, #8E3A26);
+    background: var(--hero);
     color: white;
 }
 
@@ -442,17 +444,18 @@ a {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #1A1816;
-        --text: #EDE6DD;
-        --muted: #9C9288;
-        --chip: #2A2622;
-        --chip-text: #BDB3A8;
-        --sileo: linear-gradient(135deg, #E9A56B, #C25E3A);
-        --zebra: linear-gradient(135deg, #F3ECE2, #D2C3B0);
-        --zebra-text: #2B2622;
-        --link: #E3A066;
-        --card: #24211E;
-        --card-border: #322D28;
+        --bg: #0E1A26;
+        --text: #E3EEF8;
+        --muted: #8EA3B8;
+        --chip: #1A2B3B;
+        --chip-text: #B5C7D8;
+        --sileo: linear-gradient(135deg, #3CC0FF, #2F7FD8);
+        --zebra: linear-gradient(135deg, #EAF4FC, #C3D9EC);
+        --zebra-text: #14304A;
+        --link: #5EC2FF;
+        --card: #142333;
+        --card-border: #1F3346;
+        --hero: linear-gradient(135deg, #1A9BE6, #2F6FC4);
     }
 }
 
