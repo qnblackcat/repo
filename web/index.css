@@ -13,6 +13,8 @@
     --zebra: linear-gradient(135deg, #6B5544, #2B2622);
     --zebra-text: #FAF7F2;
     --link: #A65A24;
+    --card: #FFFDF9;
+    --card-border: #EDE5D8;
 }
 
 /* Dark: the system setting, or Sileo's dark mode (set by index.js). */
@@ -26,6 +28,8 @@
     --zebra: linear-gradient(135deg, #F3ECE2, #D2C3B0);
     --zebra-text: #2B2622;
     --link: #E3A066;
+    --card: #24211E;
+    --card-border: #322D28;
 }
 
 body {
@@ -392,5 +396,38 @@ a {
         --zebra: linear-gradient(135deg, #F3ECE2, #D2C3B0);
         --zebra-text: #2B2622;
         --link: #E3A066;
+        --card: #24211E;
+        --card-border: #322D28;
     }
+}
+
+/* Each index section (Featured, Recently Updated, Packages) sits on its own card. */
+.section {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 16px;
+    margin-top: 18px;
+}
+
+.section_title {
+    font-size: 22px;
+    margin: 0 0 14px;
+}
+
+.section .scroll_view {
+    width: auto;
+    margin: 0 -10px;
+}
+
+.section .package {
+    margin-bottom: 22px;
+}
+
+.section .package:last-child, .section .recent_row:last-child {
+    margin-bottom: 0;
+}
+
+.section .recent {
+    margin-bottom: 0;
 }
