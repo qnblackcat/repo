@@ -166,6 +166,22 @@ h3 {
     color: black;
 }
 
+.variants {
+    margin-left: 90px;
+    margin-top: 8px;
+}
+
+.variant_badge {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #888;
+    padding: 2px 9px;
+    margin-right: 6px;
+    border-radius: 11px;
+    border: 1px solid #ccc;
+}
+
 .recent {
     margin-bottom: 10px;
 }
