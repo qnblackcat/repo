@@ -205,19 +205,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .repo_name {
-    font-size: 40px;
+    font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+    font-size: 38px;
+    letter-spacing: -0.5px;
     margin: 6px 0 0;
     line-height: 1.1;
 }
 
 .repo_mono {
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-weight: 800;
 }
 
 .repo_word {
-    font-weight: 300;
-    opacity: 0.85;
+    font-weight: 400;
+    opacity: 0.8;
 }
 
 .cursor {
