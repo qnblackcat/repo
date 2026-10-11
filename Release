@@ -5,8 +5,8 @@ Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
-Description: Just my private repo
+Description: Rootless & roothide ports of useful tweaks, maintained by Qn
 
 SHA256:
- f9135f52ef22f7e31b24d474c496c9ba7fc8c4be9b59fae8e1d330ffcc9bbb2f 9600 Packages.bz2
- dc5eb6db36b7e3757bd36cbee9726691b9d8f9767a463c33bd3d8ff8b37002af 9600 Packages.xz
+ 14928231b2dd223ae1e83c4879cf9020c820b5bb181821524b2ef9f102d7282a 9721 Packages.bz2
+ 3199a4c5c9144dccbd8acdcfeaf9b11821c1bb79a7496dc5e13eff1ae8519753 9712 Packages.xz
