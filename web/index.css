@@ -225,7 +225,8 @@ h3 {
 .banner_underlay {
     background-size: cover;
     background-position: center;
-    height: 150px;
+    /* Keep the banner's own aspect ratio so nothing is cropped. */
+    aspect-ratio: 263 / 148;
     width: 100%;
     border-radius: 8px;
     z-index: -2;
