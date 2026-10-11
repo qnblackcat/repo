@@ -9,7 +9,8 @@
     --muted: #8C8278;
     --chip: #EFE8DD;
     --chip-text: #5C534A;
-    --zebra: #2B2622;
+    --sileo: linear-gradient(135deg, #D98A4E, #A9472E);
+    --zebra: linear-gradient(135deg, #6B5544, #2B2622);
     --zebra-text: #FAF7F2;
     --link: #A65A24;
 }
@@ -21,8 +22,9 @@
     --muted: #9C9288;
     --chip: #2A2622;
     --chip-text: #BDB3A8;
-    --zebra: #EDE6DD;
-    --zebra-text: #1A1816;
+    --sileo: linear-gradient(135deg, #E9A56B, #C25E3A);
+    --zebra: linear-gradient(135deg, #F3ECE2, #D2C3B0);
+    --zebra-text: #2B2622;
     --link: #E3A066;
 }
 
@@ -178,7 +180,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .add_btn_sileo {
-    background: linear-gradient(135deg, #5e5ce6, #2cb1be);
+    background: var(--sileo);
 }
 
 .add_btn_zebra {
@@ -386,8 +388,9 @@ a {
         --muted: #9C9288;
         --chip: #2A2622;
         --chip-text: #BDB3A8;
-        --zebra: #EDE6DD;
-        --zebra-text: #1A1816;
+        --sileo: linear-gradient(135deg, #E9A56B, #C25E3A);
+        --zebra: linear-gradient(135deg, #F3ECE2, #D2C3B0);
+        --zebra-text: #2B2622;
         --link: #E3A066;
     }
 }
