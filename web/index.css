@@ -606,3 +606,8 @@ a {
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 13px;
 }
+
+.footer_credit {
+    font-size: 12px;
+    font-style: italic;
+}
