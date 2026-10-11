@@ -29,3 +29,18 @@ function copyRepoURL(button, url) {
         setTimeout(function () { button.textContent = "Copy"; }, 1500);
     });
 }
+
+// Packages search: keeps packages whose name contains the query, ignoring case.
+function filterPackages(query) {
+    query = query.trim().toLowerCase();
+    var packages = document.querySelectorAll(".packageList > .package");
+    var shown = 0;
+    for (var i = 0; i < packages.length; i++) {
+        var match = packages[i].getAttribute("data-name").toLowerCase().indexOf(query) != -1;
+        packages[i].hidden = !match;
+        if (match) {
+            shown++;
+        }
+    }
+    document.querySelector(".no_results").hidden = shown > 0;
+}

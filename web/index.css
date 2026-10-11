@@ -563,3 +563,37 @@ a {
 .tinted body {
     background: linear-gradient(180deg, var(--tint) 0, var(--bg) 560px) no-repeat, var(--bg);
 }
+
+.package_search {
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    width: 100%;
+    font: inherit;
+    font-size: 16px;
+    color: var(--text);
+    background: var(--chip);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    outline: none;
+}
+
+.package_search:focus {
+    border-color: var(--link);
+}
+
+.package_search::placeholder {
+    color: var(--muted);
+}
+
+.package[hidden] {
+    display: none;
+}
+
+.no_results {
+    color: var(--muted);
+    text-align: center;
+    padding: 10px 0;
+}

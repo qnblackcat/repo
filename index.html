@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
     <title>Qn_</title>
-    <link rel="stylesheet" type="text/css" href="web/index.css?v=f5a874f4">
+    <link rel="stylesheet" type="text/css" href="web/index.css?v=b5295bed">
     <style>a, .tint {color: } .active {color: }</style>
     <meta name="description" content="Rootless &amp; roothide ports of useful tweaks, maintained by Qn">
     <meta property="og:title" content="Qn_">
@@ -88,8 +88,10 @@
         </section>
         <section class="section">
         <h2 class="section_title">📦 Packages</h2>
+        <input class="package_search" type="search" placeholder="Search packages" autocomplete="off"
+               autocorrect="off" autocapitalize="off" spellcheck="false" oninput="filterPackages(this.value)">
         <div class="packageList">
-                <div class="package">
+                <div class="package" data-name="AutoPickUp">
                     <a class="subtle_link" href="depiction/web/com.qn.autopickup_iphoneos-arm64.html">
                         <img src="assets/com.qn.autopickup_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -101,7 +103,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="BadgeSync">
                     <a class="subtle_link" href="depiction/web/com.newwares.badgesync.html">
                         <img src="assets/com.newwares.badgesync/icon.png">
                         <div class="package_info">
@@ -113,7 +115,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="BetterTelex">
                     <a class="subtle_link" href="depiction/web/com.qn.bettertelex_iphoneos-arm64.html">
                         <img src="assets/com.qn.bettertelex_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -125,7 +127,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="CalculatorHistory">
                     <a class="subtle_link" href="depiction/web/com.fiore.calculatorhistory.html">
                         <img src="assets/com.fiore.calculatorhistory/icon.png">
                         <div class="package_info">
@@ -137,7 +139,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="CCCalc">
                     <a class="subtle_link" href="depiction/web/ai.paisseon.cccalc_iphoneos-arm64.html">
                         <img src="assets/ai.paisseon.cccalc_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -149,7 +151,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="CCDNDTimer">
                     <a class="subtle_link" href="depiction/web/com.0xkuj.ccdndtimer_iphoneos-arm64.html">
                         <img src="assets/com.0xkuj.ccdndtimer_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -161,7 +163,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="CCNoiseControl">
                     <a class="subtle_link" href="depiction/web/com.brend0n.ccnoisecontrol.html">
                         <img src="assets/com.brend0n.ccnoisecontrol/icon.png">
                         <div class="package_info">
@@ -173,7 +175,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="ChatGBeFree">
                     <a class="subtle_link" href="depiction/web/com.liam.chatgbefree.html">
                         <img src="assets/com.liam.chatgbefree/icon.png">
                         <div class="package_info">
@@ -185,7 +187,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="DarkPods">
                     <a class="subtle_link" href="depiction/web/com.icraze.darkpods.html">
                         <img src="assets/com.icraze.darkpods/icon.png">
                         <div class="package_info">
@@ -197,7 +199,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="DateLyrics">
                     <a class="subtle_link" href="depiction/web/com.shalamand3r.datelyrics_iphoneos-arm64.html">
                         <img src="assets/com.shalamand3r.datelyrics_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -209,7 +211,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="DeleteForeverXS">
                     <a class="subtle_link" href="depiction/web/com.p2kdev.deleteforeverxs_iphoneos-arm64.html">
                         <img src="assets/com.p2kdev.deleteforeverxs_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -221,7 +223,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="DePuke">
                     <a class="subtle_link" href="depiction/web/com.dnullptr.depuke_iphoneos-arm64.html">
                         <img src="assets/com.dnullptr.depuke_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -233,7 +235,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="EmoZoom">
                     <a class="subtle_link" href="depiction/web/com.ps.emozoom.html">
                         <img src="assets/com.ps.emozoom/icon.png">
                         <div class="package_info">
@@ -245,7 +247,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="EZSwipe">
                     <a class="subtle_link" href="depiction/web/com.imkpatil.ezswipe.html">
                         <img src="assets/com.imkpatil.ezswipe/icon.png">
                         <div class="package_info">
@@ -257,7 +259,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="FlicksForAll">
                     <a class="subtle_link" href="depiction/web/org.wuffs.flickplus_iphoneos-arm64.html">
                         <img src="assets/org.wuffs.flickplus_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -269,7 +271,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="FloatingDockXVI">
                     <a class="subtle_link" href="depiction/web/com.nahtedetihw.floatingdockxvi_iphoneos-arm64.html">
                         <img src="assets/com.nahtedetihw.floatingdockxvi_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -281,7 +283,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="IMRead">
                     <a class="subtle_link" href="depiction/web/com.3h6-1.imread.html">
                         <img src="assets/com.3h6-1.imread/icon.png">
                         <div class="package_info">
@@ -293,7 +295,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="KeepItSimple">
                     <a class="subtle_link" href="depiction/web/com.p2kdev.keepitsimple.html">
                         <img src="assets/com.p2kdev.keepitsimple/icon.png">
                         <div class="package_info">
@@ -305,7 +307,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="LSNowPlayingRepeat">
                     <a class="subtle_link" href="depiction/web/com.qn.lsnowplayingrepeat_iphoneos-arm64.html">
                         <img src="assets/com.qn.lsnowplayingrepeat_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -317,7 +319,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="More Freq Emoji and No Auto Shift">
                     <a class="subtle_link" href="depiction/web/com.qn.morefreqemojiandnoautoshift_iphoneos-arm64.html">
                         <img src="assets/com.qn.morefreqemojiandnoautoshift_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -329,7 +331,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="MoreComplications">
                     <a class="subtle_link" href="depiction/web/xyz.skitty.morecomplications_iphoneos-arm64.html">
                         <img src="assets/xyz.skitty.morecomplications_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -341,7 +343,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="NoKeyboardSettings">
                     <a class="subtle_link" href="depiction/web/com.brend0n.nokeyboardsettings.html">
                         <img src="assets/com.brend0n.nokeyboardsettings/icon.png">
                         <div class="package_info">
@@ -353,7 +355,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="NoPasteAlerts16">
                     <a class="subtle_link" href="depiction/web/com.0xkuj.nopastealerts16.html">
                         <img src="assets/com.0xkuj.nopastealerts16/icon.png">
                         <div class="package_info">
@@ -365,7 +367,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="NoPastedFrom">
                     <a class="subtle_link" href="depiction/web/com.brend0n.nopastedfrom_iphoneos-arm64.html">
                         <img src="assets/com.brend0n.nopastedfrom_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -377,7 +379,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="NotificationsGroupCount">
                     <a class="subtle_link" href="depiction/web/com.0xkuj.notificationsgroupcount.html">
                         <img src="assets/com.0xkuj.notificationsgroupcount/icon.png">
                         <div class="package_info">
@@ -389,7 +391,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="OLED Dark Mode">
                     <a class="subtle_link" href="depiction/web/me.gmoran.darkerdarkmode.html">
                         <img src="assets/me.gmoran.darkerdarkmode/icon.png">
                         <div class="package_info">
@@ -401,7 +403,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="PassBy">
                     <a class="subtle_link" href="depiction/web/com.giorgioiavicoli.passby_iphoneos-arm64.html">
                         <img src="assets/com.giorgioiavicoli.passby_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -413,7 +415,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="PleaseKeepLPM">
                     <a class="subtle_link" href="depiction/web/com.qn.plzkeeplpm_iphoneos-arm64.html">
                         <img src="assets/com.qn.plzkeeplpm_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -425,7 +427,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="ReplayKit Max">
                     <a class="subtle_link" href="depiction/web/com.ps.replaykitmax.html">
                         <img src="assets/com.ps.replaykitmax/icon.png">
                         <div class="package_info">
@@ -437,7 +439,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="SafariBlocker">
                     <a class="subtle_link" href="depiction/web/com.p2kdev.safariblocker_iphoneos-arm64.html">
                         <img src="assets/com.p2kdev.safariblocker_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -449,7 +451,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="SafariFind">
                     <a class="subtle_link" href="depiction/web/com.p2kdev.safarifind_iphoneos-arm64.html">
                         <img src="assets/com.p2kdev.safarifind_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -461,7 +463,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="SafariPicker">
                     <a class="subtle_link" href="depiction/web/com.qn.safaripicker_iphoneos-arm64.html">
                         <img src="assets/com.qn.safaripicker_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -473,7 +475,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="SlideCutPlus">
                     <a class="subtle_link" href="depiction/web/com.qn.slidecutplus_iphoneos-arm64.html">
                         <img src="assets/com.qn.slidecutplus_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -485,7 +487,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="SmoothCursor (iOS 13+)">
                     <a class="subtle_link" href="depiction/web/com.ps.smoothcursorios13.html">
                         <img src="assets/com.ps.smoothcursorios13/icon.png">
                         <div class="package_info">
@@ -497,7 +499,7 @@
                         <span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="TapTapSlumber">
                     <a class="subtle_link" href="depiction/web/cc.igerman.taptapslumber_iphoneos-arm64.html">
                         <img src="assets/cc.igerman.taptapslumber_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -509,7 +511,7 @@
                         <span class="variant_badge">rootless</span><span class="variant_badge">roothide</span>
                     </div>
                 </div>
-                <div class="package">
+                <div class="package" data-name="TrueLink">
                     <a class="subtle_link" href="depiction/web/com.qn.truelink_iphoneos-arm64.html">
                         <img src="assets/com.qn.truelink_iphoneos-arm64/icon.png">
                         <div class="package_info">
@@ -522,9 +524,10 @@
                     </div>
                 </div>
         </div>
+        <p class="no_results" hidden>No packages match your search.</p>
         </section>
         <div class="caption center footer">Silica 1.2.2 – Updated 2026-10-11</div>
     </div>
 </body>
-    <script src="web/index.js?v=f5a874f4"></script>
+    <script src="web/index.js?v=b5295bed"></script>
 </html>
