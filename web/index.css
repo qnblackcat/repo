@@ -535,3 +535,22 @@ a {
 .section .scroll_view + .md_view {
     margin-top: 10px;
 }
+
+/* Tweak pages: a gradient in the icon's colour (set per page at build time) fading into the page background. */
+.tinted {
+    --tint: var(--tint-light);
+}
+
+.tinted.dark {
+    --tint: var(--tint-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    .tinted {
+        --tint: var(--tint-dark);
+    }
+}
+
+.tinted body {
+    background: linear-gradient(180deg, var(--tint) 0, var(--bg) 560px) no-repeat, var(--bg);
+}
