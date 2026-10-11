@@ -25,3 +25,9 @@ function darkMode(isOled) {
 if (navigator.userAgent.toLowerCase().indexOf("dark") != -1) {
     darkMode(navigator.userAgent.toLowerCase().indexOf("oled") != -1 || navigator.userAgent.toLowerCase().indexOf("pure-black") != -1);
 }
+function copyRepoURL(button, url) {
+    navigator.clipboard.writeText(url).then(function () {
+        button.textContent = "Copied!";
+        setTimeout(function () { button.textContent = "Copy"; }, 1500);
+    });
+}
