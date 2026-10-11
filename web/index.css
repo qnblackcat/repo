@@ -136,27 +136,82 @@ h1, h2, h3, h4, h5, h6, p {
     float: right;
 }
 
-.repo_header {
+/* Hero card at the top of the index. */
+.hero {
+    position: relative;
+    overflow: hidden;
+    margin-top: 24px;
+    padding: 24px 20px 22px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #C9743F, #8E3A26);
+    color: white;
+}
+
+.hero:before, .hero:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.hero:before {
+    width: 220px;
+    height: 220px;
+    top: -90px;
+    right: -60px;
+}
+
+.hero:after {
+    width: 140px;
+    height: 140px;
+    bottom: -70px;
+    left: -40px;
+}
+
+.hero > * {
+    position: relative;
+}
+
+.hero_links {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.hero_link {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    color: white !important;
+}
+
+.hero_link svg {
+    width: 18px;
+    height: 18px;
 }
 
 .repo_icon {
-    width: 64px;
-    height: 64px;
-    border-radius: 15px;
-    margin-right: 16px;
-    flex-shrink: 0;
+    width: 72px;
+    height: 72px;
+    border-radius: 17px;
+    border: 3px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
 
 .repo_name {
-    font-size: 30px;
+    font-size: 32px;
+    margin: 14px 0 0;
 }
 
 .repo_desc {
-    color: var(--muted);
-    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 4px 0 0;
 }
 
 .add_buttons {
