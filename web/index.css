@@ -117,6 +117,12 @@ h1, h2, h3, h4, h5, h6, p {
     display: inline-block;
 }
 
+/* A lone screenshot has nothing to scroll to, so centre it. */
+.scroll_view > .img_card:only-child {
+    display: block;
+    margin: 5px auto;
+}
+
 .card > p {
     color: white;
     bottom: 15px;
