@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="tinted" style="--tint-light: #b4bcc6; --tint-dark: #131e2b;">
+<html class="tinted" style="--tint-light: #b4bcc6; --tint-dark: #131e2c;">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="cell">
                         <div class="title">Version</div>
-                        <div class="text">0.2.1</div>
+                        <div class="text">1.0.0</div>
                     </div>
                     <div class="cell">
                         <div class="title">Bundle ID</div>
@@ -72,6 +72,14 @@
         <div class="changelog">
             <section class="section">
                 <div class="changelog_entry">
+                <h4>1.0.0</h4>
+                <div class="md_view"><ul>
+<li>Khôi phục từ Tiếng Anh (iOS 15+): Khi bấm dấu cách, “,” hoặc “.”, nếu từ vừa gõ có dấu mà không phải âm tiết tiếng Việt thì BetterTelex trả về đúng các phím đã gõ (ví dụ “does” không còn bị đổi thành “doé”). Dùng danh sách âm tiết hunspell-vi (GPLv2). Tham khảo từ dự án xmannv/xkey</li>
+<li>Telex đơn giản: Phím “w” gõ một mình giữ nguyên là “w” thay vì thành “ư” (ví dụ “what” vẫn là “what”); “uw” vẫn ra “ư”.</li>
+<li>iOS 14 trở xuống vẫn là thử nghiệm, iOS 15 chưa kiểm chứng. Đã test trên iOS 16 và 17.</li>
+</ul>
+</div>
+            </div><div class="changelog_entry">
                 <h4>0.2.1</h4>
                 <div class="md_view"><ul>
 <li>Experimental iOS 14 support (untested on real devices; falls back to stock keyboard behaviour if it can't read the composition state).</li>
@@ -89,7 +97,7 @@
             </div>
             </section>
         </div>
-        <div class="caption center footer"><p class="footer_terminal">~ $ last build: 17/10/2026 · 32 tweaks<span class="cursor">_</span></p><p class="footer_credit">Made with ❤️ by Qn · Powered by <a href="https://github.com/Shugabuga/Silica">Silica</a></p></div>
+        <div class="caption center footer"><p class="footer_terminal">~ $ last build: 18/10/2026 · 32 tweaks<span class="cursor">_</span></p><p class="footer_credit">Made with ❤️ by Qn · Powered by <a href="https://github.com/Shugabuga/Silica">Silica</a></p></div>
     </div>
 </body>
 <script>externalize()</script>
