@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
+    <title>Tapbacks18</title>
+    <link rel="stylesheet" type="text/css" href="../../web/index.css?v=04df4525">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png?v=04df4525">
+    <link rel="apple-touch-icon" href="../../CydiaIcon@3x.png?v=04df4525">
+    <style>a, .tint, .table-btn:after {color: } .active {color: ;border-bottom: 2px solid ;}</style>
+    <script src="../../web/index.js?v=04df4525"></script>
+    <meta name="description" content="A package by Qn for iOS 16.0 to 17.0.">
+    <meta property="og:title" content="Tapbacks18">
+    <meta property="og:description" content="A package by Qn for iOS 16.0 to 17.0.">
+    <meta property="og:image" content="../../assets/com.qn.tapbacks18_iphoneos-arm64e/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tapbacks18">
+    <meta name="twitter:description" content="A package by Qn for iOS 16.0 to 17.0.">
+    <meta name="twitter:image" content="https://qnblackcat.github.io/repo/assets/com.qn.tapbacks18_iphoneos-arm64e/banner.png">
+    <meta name="theme-color" content="">
+</head>
+<body>
+    <div class="body">
+        <div style="background-image: url(../../assets/com.qn.tapbacks18_iphoneos-arm64e/banner.png)" class="banner_underlay"></div>
+        <div class="package package_head">
+            <img src="../../assets/com.qn.tapbacks18_iphoneos-arm64e/icon.png">
+            <div class="package_info">
+                <h1 class="package_name">Tapbacks18</h1>
+                <p class="package_caption">Qn</p>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_btn active tweak_info_btn" onclick="swap('.changelog','.tweak_info');">Details</div>
+            <div class="nav_btn changelog_btn" onclick="swap('.tweak_info','.changelog');">Changelog</div>
+        </div>
+        <div class="tweak_info">
+            <section class="section">
+                
+                <div class="md_view">
+                    <p><ul>
+<li>An attempt to bring the Tapbacks feature from iOS 18+ down to iOS 16 / 17.</li>
+</ul>
+<h2>Features</h2>
+<ul>
+<li>A round &quot;+&quot; button beside the six classic tapbacks opens the emoji keyboard; the picked emoji is sent as a tapback.</li>
+<li>If your own tapback is an emoji, the &quot;+&quot; button shows it (blue); tap it to change it, or tap the ✕ badge to remove it.
+This also works when you open the picker by tapping an existing tapback on a message.</li>
+<li>Emoji tapbacks from other people are drawn in the tapback platter.</li>
+<li>Between devices that all run Tapbacks18, emoji land on the exact message, including photos and files.</li>
+<li>iOS 18+ devices without the tweak: their emoji tapbacks arrive as plain text (&quot;Reacted 🔥 to “…”&quot;, 45 languages) and
+are turned back into tapbacks. Text messages match by content; photos/files by &quot;newest message with an attachment&quot; unless
+the native setting is on (see below).</li>
+</ul>
+<h3>Native emoji tapbacks</h3>
+<p>iOS 18+ sends the native emoji tapback (<code>amt</code> 2006/3006 + <code>ame</code> + <code>amk</code> = exact target) only to devices whose IDS
+registration advertises <code>supports-stick-moji-backs</code>; others get a plain-text fallback with no target GUID for
+photos, videos and attachments.</p>
+<ul>
+<li><strong>Turn it on</strong> only if you want emoji from iOS 18+ devices without Tapbacks18 to show on the exact photo or file. You do
+<strong>not</strong> need it for text messages, or between devices that all have Tapbacks18.</li>
+<li><code>Tapbacks18IDS</code> (identityservicesd) adds the capability to the iMessage client data. It applies only after iMessage
+registers again: toggle iMessage off and on (Settings → Messages → iMessage) after turning it on <strong>or off</strong>. This changes
+the registration data sent to Apple. It has been tested on the developer's own devices without any sign of being
+flagged, but use it at your own risk.</li>
+<li>Before uninstalling Tapbacks18, turn it off and toggle iMessage again; otherwise iOS 18+ keeps sending emoji tapbacks
+that this device cannot show.</li>
+</ul>
+<h2>Known limitations</h2>
+<ul>
+<li><strong>Notifications and the conversation-list preview say &quot;loved …&quot;</strong> for an emoji tapback. Those strings are built from the
+classic tapback type (<code>IMTapback previewString…</code>), which only sees the heart. Not fixed.</li>
+<li>Sticker tapbacks from iOS 18 (<code>amt</code> 2007/3007) become a plain-text message (&quot;Reacted with a sticker&quot;).</li>
+<li>If the tweak is not loaded (e.g. reboot into jailed mode), emoji tapbacks show as hearts.</li>
+<li>iOS 16/17 devices without the tweak may not display <code>amt</code> 2006 at all.</li>
+<li>The pinned-conversation tapback bubble (<code>CKPinnedConversationTapbackBubble</code>) does not show emoji.</li>
+<li>Tapbacks stored by very old builds that carried a <code>tbr</code> summary key are no longer handled.</li>
+</ul>
+<h2>To do</h2>
+<ul>
+<li>iOS 15 support.</li>
+<li>Group chat support.</li>
+<li>Show who reacted with which emoji.</li>
+</ul>
+</p>
+                </div>
+            </section>
+            <section class="section">
+                <h3 class="section_title">ℹ️ Information</h3>
+                <div class="table">
+                    <div class="cell">
+                        <div class="title">Developer</div>
+                        <div class="text">Qn</div>
+                    </div>
+                    <div class="cell">
+                        <div class="title">Version</div>
+                        <div class="text">0.0.1~b1</div>
+                    </div>
+                    <div class="cell">
+                        <div class="title">Bundle ID</div>
+                        <div class="text mono">com.qn.tapbacks18</div>
+                    </div>
+                    <div class="cell">
+                        <div class="title">Compatibility</div>
+                        <div class="text">iOS 16.0 to 17.0</div>
+                    </div>
+                    <div class="cell">
+                        <div class="title">Section</div>
+                        <div class="text">Tweaks</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="changelog">
+            <section class="section">
+                This package has no changelog.
+            </section>
+        </div>
+        <div class="caption center footer"><p class="footer_terminal">~ $ last build: 22/10/2026 · 33 tweaks<span class="cursor">_</span></p><p class="footer_credit">Made with ❤️ by Qn · Powered by <a href="https://github.com/Shugabuga/Silica">Silica</a></p></div>
+    </div>
+</body>
+<script>externalize()</script>
+</html>
