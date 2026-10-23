@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="tinted" style="--tint-light: #baddfb; --tint-dark: #1a4164;">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
@@ -9,13 +9,13 @@
     <link rel="apple-touch-icon" href="../../CydiaIcon@3x.png?v=04df4525">
     <style>a, .tint, .table-btn:after {color: } .active {color: ;border-bottom: 2px solid ;}</style>
     <script src="../../web/index.js?v=04df4525"></script>
-    <meta name="description" content="A package by Qn for iOS 16.0 to 17.0.">
+    <meta name="description" content="A package by Qn for iOS 15.0 to 17.0.">
     <meta property="og:title" content="Tapbacks18">
-    <meta property="og:description" content="A package by Qn for iOS 16.0 to 17.0.">
+    <meta property="og:description" content="A package by Qn for iOS 15.0 to 17.0.">
     <meta property="og:image" content="../../assets/com.qn.tapbacks18_iphoneos-arm64/banner.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Tapbacks18">
-    <meta name="twitter:description" content="A package by Qn for iOS 16.0 to 17.0.">
+    <meta name="twitter:description" content="A package by Qn for iOS 15.0 to 17.0.">
     <meta name="twitter:image" content="https://qnblackcat.github.io/repo/assets/com.qn.tapbacks18_iphoneos-arm64/banner.png">
     <meta name="theme-color" content="">
 </head>
@@ -35,51 +35,28 @@
         </div>
         <div class="tweak_info">
             <section class="section">
-                
+                <div class="scroll_view"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64/screenshot/1.jpg"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64/screenshot/2.jpg"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64/screenshot/3.jpg"></div>
                 <div class="md_view">
-                    <p><ul>
-<li>An attempt to bring the Tapbacks feature from iOS 18+ down to iOS 16 / 17.</li>
-</ul>
+                    <p><p>An attempt to bring the Tapbacks feature from iOS 18+ down to iOS 15 / 16 / 17.</p>
 <h2>Features</h2>
 <ul>
-<li>A round &quot;+&quot; button beside the six classic tapbacks opens the emoji keyboard; the picked emoji is sent as a tapback.</li>
-<li>If your own tapback is an emoji, the &quot;+&quot; button shows it (blue); tap it to change it, or tap the ✕ badge to remove it.
-This also works when you open the picker by tapping an existing tapback on a message.</li>
-<li>Emoji tapbacks from other people are drawn in the tapback platter.</li>
-<li>Between devices that all run Tapbacks18, emoji land on the exact message, including photos and files.</li>
-<li>iOS 18+ devices without the tweak: their emoji tapbacks arrive as plain text (&quot;Reacted 🔥 to “…”&quot;, 45 languages) and
-are turned back into tapbacks. Text messages match by content; photos/files by &quot;newest message with an attachment&quot; unless
-the native setting is on (see below).</li>
-</ul>
-<h3>Native emoji tapbacks</h3>
-<p>iOS 18+ sends the native emoji tapback (<code>amt</code> 2006/3006 + <code>ame</code> + <code>amk</code> = exact target) only to devices whose IDS
-registration advertises <code>supports-stick-moji-backs</code>; others get a plain-text fallback with no target GUID for
-photos, videos and attachments.</p>
-<ul>
-<li><strong>Turn it on</strong> only if you want emoji from iOS 18+ devices without Tapbacks18 to show on the exact photo or file. You do
-<strong>not</strong> need it for text messages, or between devices that all have Tapbacks18.</li>
-<li><code>Tapbacks18IDS</code> (identityservicesd) adds the capability to the iMessage client data. It applies only after iMessage
-registers again: toggle iMessage off and on (Settings → Messages → iMessage) after turning it on <strong>or off</strong>. This changes
-the registration data sent to Apple. It has been tested on the developer's own devices without any sign of being
-flagged, but use it at your own risk.</li>
-<li>Before uninstalling Tapbacks18, turn it off and toggle iMessage again; otherwise iOS 18+ keeps sending emoji tapbacks
-that this device cannot show.</li>
+<li>A round smiley button beside the six classic tapbacks opens the emoji keyboard; the picked emoji is sent as a tapback.</li>
+<li>You can even drop any emoji into the message of someone using iOS 18+ who is not jailbroken 👀</li>
+<li>Emoji from others show up in the Tapback bubble, including from iOS 18+ non jailbroken devices.</li>
+<li>Between devices that all have Tapbacks18, the emoji lands on the exact message, photos and files included.</li>
+<li>Compatible with EmojiPort.</li>
+<li>Experimental “Native emoji tapbacks”</li>
 </ul>
 <h2>Known limitations</h2>
 <ul>
-<li><strong>Notifications and the conversation-list preview say &quot;loved …&quot;</strong> for an emoji tapback. Those strings are built from the
-classic tapback type (<code>IMTapback previewString…</code>), which only sees the heart. Not fixed.</li>
+<li><strong>Notifications say &quot;loved …&quot;</strong> for an emoji tapback. They are built from the classic tapback type
+(<code>IMTapback previewString…</code>), which only sees the heart. Not fixed. (The conversation-list preview shows the emoji text.)</li>
 <li>Sticker tapbacks from iOS 18 (<code>amt</code> 2007/3007) become a plain-text message (&quot;Reacted with a sticker&quot;).</li>
 <li>If the tweak is not loaded (e.g. reboot into jailed mode), emoji tapbacks show as hearts.</li>
 <li>iOS 16/17 devices without the tweak may not display <code>amt</code> 2006 at all.</li>
 <li>The pinned-conversation tapback bubble (<code>CKPinnedConversationTapbackBubble</code>) does not show emoji.</li>
-<li>Tapbacks stored by very old builds that carried a <code>tbr</code> summary key are no longer handled.</li>
-</ul>
-<h2>To do</h2>
-<ul>
-<li>iOS 15 support.</li>
-<li>Group chat support.</li>
-<li>Show who reacted with which emoji.</li>
+<li>Group circles: classic tapbacks in the extra circles are drawn with SF Symbols (not ChatKit's own glyphs); at most 4
+circles are shown; long-press on an extra circle and sent-message platters (circles to the right) are not fully tested.</li>
 </ul>
 </p>
                 </div>
@@ -93,7 +70,7 @@ classic tapback type (<code>IMTapback previewString…</code>), which only sees 
                     </div>
                     <div class="cell">
                         <div class="title">Version</div>
-                        <div class="text">0.0.1~b1</div>
+                        <div class="text">0.0.1~b3</div>
                     </div>
                     <div class="cell">
                         <div class="title">Bundle ID</div>
@@ -101,7 +78,7 @@ classic tapback type (<code>IMTapback previewString…</code>), which only sees 
                     </div>
                     <div class="cell">
                         <div class="title">Compatibility</div>
-                        <div class="text">iOS 16.0 to 17.0</div>
+                        <div class="text">iOS 15.0 to 17.0</div>
                     </div>
                     <div class="cell">
                         <div class="title">Section</div>
@@ -112,10 +89,20 @@ classic tapback type (<code>IMTapback previewString…</code>), which only sees 
         </div>
         <div class="changelog">
             <section class="section">
-                This package has no changelog.
+                <div class="changelog_entry">
+                <h4>0.0.1~b3</h4>
+                <div class="md_view"><ul>
+<li>Group chat support: one circle per person like iOS 18, and the &quot;who reacted&quot; panel shows which emoji each person used.</li>
+<li>The &quot;+&quot; button beside the tapbacks is now a smiley button.</li>
+<li>Faster response when opening the emoji keyboard.</li>
+<li>New settings and package icons.</li>
+<li>Experimental iOS 15 support. Not tested on a real device yet, and the &quot;Native emoji tapbacks&quot; option (<code>Tapbacks18IDS</code>) is not available there.</li>
+</ul>
+</div>
+            </div>
             </section>
         </div>
-        <div class="caption center footer"><p class="footer_terminal">~ $ last build: 22/10/2026 · 33 tweaks<span class="cursor">_</span></p><p class="footer_credit">Made with ❤️ by Qn · Powered by <a href="https://github.com/Shugabuga/Silica">Silica</a></p></div>
+        <div class="caption center footer"><p class="footer_terminal">~ $ last build: 23/10/2026 · 32 tweaks<span class="cursor">_</span></p><p class="footer_credit">Made with ❤️ by Qn · Powered by <a href="https://github.com/Shugabuga/Silica">Silica</a></p></div>
     </div>
 </body>
 <script>externalize()</script>
