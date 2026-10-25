@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
     <title>Tapbacks18</title>
-    <link rel="stylesheet" type="text/css" href="../../web/index.css?v=04df4525">
-    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png?v=04df4525">
-    <link rel="apple-touch-icon" href="../../CydiaIcon@3x.png?v=04df4525">
+    <link rel="stylesheet" type="text/css" href="../../web/index.css?v=a9bf571d">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png?v=a9bf571d">
+    <link rel="apple-touch-icon" href="../../CydiaIcon@3x.png?v=a9bf571d">
     <style>a, .tint, .table-btn:after {color: } .active {color: ;border-bottom: 2px solid ;}</style>
-    <script src="../../web/index.js?v=04df4525"></script>
+    <script src="../../web/index.js?v=a9bf571d"></script>
     <meta name="description" content="A package by Qn for iOS 15.0 to 17.0.">
     <meta property="og:title" content="Tapbacks18">
     <meta property="og:description" content="A package by Qn for iOS 15.0 to 17.0.">
@@ -44,17 +44,16 @@
 <li>You can even drop any emoji into the message of someone using iOS 18+ who is not jailbroken 👀</li>
 <li>Emoji from others show up in the Tapback bubble, including from iOS 18+ non jailbroken devices.</li>
 <li>Between devices that all have Tapbacks18, the emoji lands on the exact message, photos and files included.</li>
+<li>Notifications and the conversation list preview show the emoji tapback (&quot;Reacted 🔥 to “…”&quot;) instead of &quot;Loved …&quot;.</li>
 <li>Compatible with EmojiPort.</li>
 <li>Experimental “Native emoji tapbacks”</li>
 </ul>
 <h2>Known limitations</h2>
 <ul>
-<li><strong>Notifications say &quot;loved …&quot;</strong> for an emoji tapback. They are built from the classic tapback type
-(<code>IMTapback previewString…</code>), which only sees the heart. Not fixed. (The conversation-list preview shows the emoji text.)</li>
 <li>Sticker tapbacks from iOS 18 (<code>amt</code> 2007/3007) become a plain-text message (&quot;Reacted with a sticker&quot;).</li>
 <li>If the tweak is not loaded (e.g. reboot into jailed mode), emoji tapbacks show as hearts.</li>
 <li>iOS 16/17 devices without the tweak may not display <code>amt</code> 2006 at all.</li>
-<li>The pinned-conversation tapback bubble (<code>CKPinnedConversationTapbackBubble</code>) does not show emoji.</li>
+<li>The pinned-conversation tapback bubble does not show emoji.</li>
 <li>Group circles: classic tapbacks in the extra circles are drawn with SF Symbols (not ChatKit's own glyphs); at most 4
 circles are shown; long-press on an extra circle and sent-message platters (circles to the right) are not fully tested.</li>
 </ul>

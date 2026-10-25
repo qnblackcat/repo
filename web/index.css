@@ -707,3 +707,30 @@ a {
 .package_head {
     margin-bottom: 0;
 }
+
+/* Description and changelog markdown on tweak pages: give paragraphs, headings and list items room to breathe. */
+.md_view {
+    line-height: 1.5;
+}
+
+.md_view p {
+    margin: 0 0 10px;
+}
+
+.md_view h1, .md_view h2, .md_view h3, .md_view h4, .md_view h5, .md_view h6 {
+    margin: 18px 0 8px;
+    line-height: 1.25;
+}
+
+.md_view ul, .md_view ol {
+    margin: 6px 0 12px;
+    padding-left: 22px;
+}
+
+.md_view li {
+    margin: 0 0 6px;
+}
+
+.md_view li:last-child {
+    margin-bottom: 0;
+}
