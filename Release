@@ -8,5 +8,5 @@ Components: main
 Description: Rootless & roothide ports of useful tweaks, maintained by Qn
 
 SHA256:
- d9e07a27b53b448d7216b038b297bd915756c4c817b9bf652b7ccfa1f6b004a8 9391 Packages.bz2
- 880b60d0717ec167b7506d2fae42db72f16fd639387404137bc704794ab06991 9248 Packages.xz
+ 1b98a8ec76ba82fbe0b6dc1b081195997b52b36f62fb266be5e56e5dcc2a8bf8 9382 Packages.bz2
+ e6a1de9312774aea244e45a453039925e40500f7048f94ba722aac39130d3a88 9252 Packages.xz
