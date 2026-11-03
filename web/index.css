@@ -734,3 +734,76 @@ a {
 .md_view li:last-child {
     margin-bottom: 0;
 }
+
+/* Tweak pages: a link back to the repo's front page, styled after the index hero (blinking cursor included) with
+   an arrow that nudges left now and then. Hidden inside package managers (see index.js). */
+.repo_back {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 7px 14px 7px 12px;
+    border-radius: 999px;
+    background: var(--hero);
+    color: #FFFFFF !important;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 4px 14px rgba(34, 140, 230, 0.35);
+    transition: transform 0.2s ease;
+    animation: repo_back_in 0.45s ease-out both;
+}
+
+/* Pages tinted after their icon fill the button with the icon's own colour instead. */
+.tinted .repo_back {
+    background: var(--accent);
+    color: var(--accent-text) !important;
+    /* The thin ring keeps very dark or very light icon colours visible against the page. */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18), inset 0 0 0 1px rgba(128, 128, 128, 0.35);
+}
+
+.repo_back:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.repo_back:active {
+    transform: scale(0.95);
+}
+
+.repo_back_arrow {
+    display: inline-block;
+    animation: repo_back_nudge 3s ease-in-out 1s infinite;
+}
+
+.repo_back:hover .repo_back_arrow {
+    animation: none;
+    transform: translateX(-3px);
+}
+
+@keyframes repo_back_in {
+    from {
+        opacity: 0;
+        transform: translateX(-12px);
+    }
+}
+
+@keyframes repo_back_nudge {
+    0%, 70%, 100% {
+        transform: translateX(0);
+    }
+    78%, 92% {
+        transform: translateX(-4px);
+    }
+    85% {
+        transform: translateX(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .repo_back, .repo_back_arrow {
+        animation: none;
+    }
+}
+
+.in_app .repo_back {
+    display: none;
+}

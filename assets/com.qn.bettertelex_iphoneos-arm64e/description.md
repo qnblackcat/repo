@@ -1,0 +1,2 @@
+- Tweak sửa lỗi bộ gõ **Telex** của bàn phím tiếng Việt mặc định trên iOS: từ đã gõ đúng bị biến đổi khi quay lại sửa. Ví dụ: what => ưhats
+- Tự khôi phục từ không phải tiếng Việt.

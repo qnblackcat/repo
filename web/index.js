@@ -10,9 +10,16 @@ function swap(hide, show) {
 }
 
 function externalize() {
-    for (var i = document.querySelectorAll("a").length - 1; i >= 0; i--) {
-        document.querySelectorAll("a")[0].setAttribute("target","blank")
+    var links = document.querySelectorAll("a:not(.repo_back)");
+    for (var i = links.length - 1; i >= 0; i--) {
+        links[i].setAttribute("target","blank")
     }
+}
+
+// Package managers open tweak pages as depictions and have their own Back button, so the link back to the repo
+// is only shown in a normal browser.
+if (/cydia|zebra|installer|sileo/i.test(navigator.userAgent)) {
+    document.documentElement.classList.add("in_app");
 }
 function darkMode(isOled) {
     document.documentElement.classList.add("dark");
