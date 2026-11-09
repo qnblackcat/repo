@@ -1,1 +1,3 @@
 A jailbreak tweak that makes the X app (`com.atebits.Tweetie2`) look like Twitter again, without patching the IPA, based on [NeoFreeBird](https://github.com/NeoFreeBird/app).
+
+Choosing the icon needs [my fork of NeoFreeBird](https://github.com/qnblackcat/neofreebird-tweak); the upstream [NeoFreeBird](https://github.com/NeoFreeBird/app) does not have this feature. With the fork installed, its "Change app icon" screen lists the icons shipped in `Icons/`. It tells this tweak which one was picked with a Darwin notification (`com.qn.twitterrebrand.icon.<name>`), because a sandboxed app cannot change SpringBoard's icon itself. The choice is stored in the `com.qn.twitterrebrand` preference domain.
