@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="tinted" style="--tint-light: #eaebeb; --tint-dark: #4d5153; --accent: #e1d2be; --accent-text: #14304A;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=0">
+    <title>BatteryBless</title>
+    <link rel="stylesheet" type="text/css" href="../../web/index.css?v=6eb28d57">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png?v=6eb28d57">
+    <link rel="apple-touch-icon" href="../../CydiaIcon@3x.png?v=6eb28d57">
+    <style>a, .tint, .table-btn:after {color: } .active {color: ;border-bottom: 2px solid ;}</style>
+    <script src="../../web/index.js?v=6eb28d57"></script>
+    <meta name="description" content="A package by Qn for iOS 15.0 or later.">
+    <meta property="og:title" content="BatteryBless">
+    <meta property="og:description" content="A package by Qn for iOS 15.0 or later.">
+    <meta property="og:image" content="../../assets/com.qn.batterybless_iphoneos-arm64e/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BatteryBless">
+    <meta name="twitter:description" content="A package by Qn for iOS 15.0 or later.">
+    <meta name="twitter:image" content="https://qnblackcat.github.io/repo/assets/com.qn.batterybless_iphoneos-arm64e/banner.png">
+    <meta name="theme-color" content="">
+</head>
+<body>
+    <div class="body">
+        <a href="../../" class="repo_back" aria-label="Back to Qn_ repo"><span class="repo_back_arrow">←</span> Qn<span class="cursor">_</span></a>
+        <div style="background-image: url(../../assets/com.qn.batterybless_iphoneos-arm64e/banner.png)" class="banner_underlay"></div>
+        <div class="package package_head">
+            <img src="../../assets/com.qn.batterybless_iphoneos-arm64e/icon.png">
+            <div class="package_info">
+                <h1 class="package_name">BatteryBless</h1>
+                <p class="package_caption">Qn</p>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav_btn active tweak_info_btn" onclick="swap('.changelog','.tweak_info');">Details</div>
+            <div class="nav_btn changelog_btn" onclick="swap('.tweak_info','.changelog');">Changelog</div>
+        </div>
+        <div class="tweak_info">
+            <section class="section">
+                <div class="scroll_view"><img class="img_card" src="../../assets/com.qn.batterybless_iphoneos-arm64e/screenshot/1.jpg"><img class="img_card" src="../../assets/com.qn.batterybless_iphoneos-arm64e/screenshot/2.jpg"></div>
+                <div class="md_view">
+                    <p><h1>BatteryBless</h1>
+<p>Makes Settings treat a replaced battery as a genuine one, and shows more about your battery.</p>
+<p>After a battery replacement outside Apple, iOS often says &quot;Unable to verify this iPhone has a genuine Apple battery&quot;, hides <strong>Maximum Capacity</strong> and <strong>Peak Performance Capability</strong>, and lists the battery as an <strong>Unknown Part</strong>. BatteryBless fixes how Settings <em>shows</em> this. Your battery is not changed in any way.</p>
+<h2>What it does</h2>
+<ul>
+<li><strong>Removes the genuine-battery warning.</strong> Settings → Battery → Battery Health &amp; Charging stops saying the battery can't be verified, and Maximum Capacity and Peak Performance appear again.</li>
+<li><strong>Adds more battery info</strong> to the same page (Cycle count, Charge status, Temperature,...).</li>
+<li><strong>Hides the &quot;Unknown Part&quot; battery</strong> in Settings → General → About → Parts &amp; Service History. Other parts (screen, camera…) and genuine Apple part records stay as they are.</li>
+</ul>
+<h2>Note:</h2>
+<ul>
+<li>The tweak does <strong>not</strong> patch how the kernel authenticates the battery. See: https://github.com/qnblackcat/BatteryBless/blob/main/RESEARCH.md</li>
+<li>It only changes what Settings displays. It does not make Apple, a repair shop or any other app treat the battery as genuine.</li>
+<li>If the battery has no capacity data yet (new battery, or iOS has not measured it), Maximum Capacity can stay empty for a while. This is iOS, not the tweak.</li>
+<li>The charge, current and temperature rows are a snapshot taken when you open the page. Leave the page and come back to refresh them.</li>
+</ul>
+</p>
+                </div>
+            </section>
+            <section class="section">
+                <h3 class="section_title">ℹ️ Information</h3>
+                <div class="table">
+                    <div class="cell">
+                        <div class="title">Developer</div>
+                        <div class="text">Qn</div>
+                    </div>
+                    <div class="cell">
+                        <div class="title">Version</div>
+                        <div class="text">1.0.0</div>
+                    </div>
+                    <div class="cell">
+                        <div class="title">Bundle ID</div>
+                        <div class="text mono">com.qn.batterybless</div>
+                    </div>
+                    <div class="cell">
+                        <div class="title">Compatibility</div>
+                        <div class="text">iOS 15.0 or later</div>
+                    </div>
+                    <div class="cell">
+                        <div class="title">Section</div>
+                        <div class="text">Tweaks</div>
+                    </div>
+                </div>
+                <a href="https://github.com/qnblackcat/BatteryBless" class="table-btn">
+                    <div>View Source Code</div>
+                </a>
+            </section>
+        </div>
+        <div class="changelog">
+            <section class="section">
+                <div class="changelog_entry">
+                <h4>1.0.0</h4>
+                <div class="md_view"><ul>
+<li>Initial release.</li>
+</ul>
+</div>
+            </div>
+            </section>
+        </div>
+        <div class="caption center footer"><p class="footer_terminal">~ $ last build: 16/11/2026 · 47 tweaks<span class="cursor">_</span></p><p class="footer_credit">Made with ❤️ by Qn · Powered by <a href="https://github.com/Shugabuga/Silica">Silica</a></p></div>
+    </div>
+</body>
+<script>externalize()</script>
+</html>
