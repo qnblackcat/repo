@@ -2,7 +2,7 @@
 
 [Safari iOS 27.3's full address bar, backported](https://x.com/galloeldo/status/2121305023812641124). While you edit the address bar, the whole URL wraps onto several lines instead of scrolling along a single one. 
 
-Currently only support Safari on iPhone in portrait mode. iPad support is WIP.
+Supports Safari on iPhone in portrait mode. iPad support is experimental (tested on iPadOS 17 only).
 
 ## How it works
 
