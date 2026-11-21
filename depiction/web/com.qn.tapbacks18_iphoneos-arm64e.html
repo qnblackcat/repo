@@ -36,25 +36,36 @@
         </div>
         <div class="tweak_info">
             <section class="section">
-                <div class="scroll_view"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64e/screenshot/1.jpg"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64e/screenshot/2.jpg"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64e/screenshot/3.jpg"></div>
+                <div class="scroll_view"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64e/screenshot/1.jpg"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64e/screenshot/2.jpg"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64e/screenshot/3.jpg"><img class="img_card" src="../../assets/com.qn.tapbacks18_iphoneos-arm64e/screenshot/4.jpg"></div>
                 <div class="md_view">
-                    <p><p>An attempt to bring the Tapbacks feature from iOS 18+ down to iOS 15 / 16 / 17.</p>
+                    <p><p>Bring the Tapbacks feature from iOS 18+ down to iOS 15 / 16 / 17, plus a few privacy switches for Messages.</p>
 <h2>Features</h2>
 <ul>
 <li>A round smiley button beside the six classic tapbacks opens the emoji keyboard; the picked emoji is sent as a tapback.</li>
 <li>You can even drop any emoji into the message of someone using iOS 18+ who is not jailbroken 👀</li>
 <li>Emoji from others show up in the Tapback bubble, including from iOS 18+ non jailbroken devices.</li>
 <li>Between devices that all have Tapbacks18, the emoji lands on the exact message, photos and files included.</li>
-<li>Notifications and the conversation list preview show the emoji tapback (&quot;Reacted 🔥 to “…”&quot;) instead of &quot;Loved …&quot;.</li>
 <li>Compatible with EmojiPort.</li>
-<li>Experimental “Native emoji tapbacks”</li>
+<li>Experimental “Native emoji tapbacks”.</li>
+<li>Privacy switches (see below): Hide Read, Hide Delivered, Hide Typing, Keep Unsent messages, each for all chats or for one conversation.</li>
+</ul>
+<h2>Privacy</h2>
+<ul>
+<li><strong>Hide Read status</strong>: you still see other people's Read</li>
+<li><strong>Hide Delivered status</strong>: the delivery receipts of this device are not sent. It only works on devices with Tapbacks18:
+the sender still sees Delivered when any other Apple device of yours (Mac, iPad) receives the message.</li>
+<li><strong>Hide Typing indicator</strong></li>
+<li><strong>Keep Unsent messages</strong>: when the sender unsends a message (iOS 16+), the message stays. Edits still go through. The kept
+message is tagged &quot;↩︎ Unsent Prevented ✋&quot; next to the bubble in Messages.</li>
+<li><strong>Per conversation</strong>: open a chat in Messages, tap the Avatar → <strong>Tapbacks18 Privacy</strong>. Settings here override the general settings in Settings → Tapbacks18 → Privacy.</li>
 </ul>
 <h2>Known limitations</h2>
 <ul>
-<li>Sticker tapbacks from iOS 18 (<code>amt</code> 2007/3007) become a plain-text message (&quot;Reacted with a sticker&quot;).</li>
+<li>Hide Delivered cannot hide the &quot;Delivered&quot; that other Apple devices of yours send.</li>
+<li>Sticker tapbacks from iOS 18 is still received as a plain-text message.</li>
 <li>If the tweak is not loaded (e.g. reboot into jailed mode), emoji tapbacks show as hearts.</li>
-<li>iOS 16/17 devices without the tweak may not display <code>amt</code> 2006 at all.</li>
-<li>The pinned-conversation tapback bubble does not show emoji.</li>
+<li>iOS 16/17 devices without the tweak may not display emoji correctly.</li>
+<li>The pinned-conversation tapback bubble (<code>CKPinnedConversationTapbackBubble</code>) does not show emoji.</li>
 <li>Group circles: classic tapbacks in the extra circles are drawn with SF Symbols (not ChatKit's own glyphs); at most 4
 circles are shown; long-press on an extra circle and sent-message platters (circles to the right) are not fully tested.</li>
 </ul>
@@ -70,7 +81,7 @@ circles are shown; long-press on an extra circle and sent-message platters (circ
                     </div>
                     <div class="cell">
                         <div class="title">Version</div>
-                        <div class="text">1.0.3</div>
+                        <div class="text">2.0.0</div>
                     </div>
                     <div class="cell">
                         <div class="title">Bundle ID</div>
@@ -90,6 +101,14 @@ circles are shown; long-press on an extra circle and sent-message platters (circ
         <div class="changelog">
             <section class="section">
                 <div class="changelog_entry">
+                <h4>2.0.0</h4>
+                <div class="md_view"><ul>
+<li>Added options to hide Read, Delivered and Typing status from other people.</li>
+<li>Added an option to keep messages that were unsent.</li>
+<li>Each option can also be set per conversation: tap the Avatar in a chat → Tapbacks18 Privacy.</li>
+</ul>
+</div>
+            </div><div class="changelog_entry">
                 <h4>1.0.3</h4>
                 <div class="md_view"><ul>
 <li>Fixed the emoji button going off screen when the tapback bar is wide.</li>
