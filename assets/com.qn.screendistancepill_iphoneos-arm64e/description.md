@@ -1,1 +1,2 @@
-Replaces the full-screen Screen Distance warning ("iPhone is Too Close", iOS 17) with a small pill under the Dynamic Island / Notch. The pill blocks nothing and goes away by itself once the face is far enough away (or no longer seen).
+Shows a small pill instead of the full-screen "iPhone is Too Close" warning.
+On iPhones that have Dynamic Island, you can choose to show the eye icon in the Dynamic Island instead of the pill.
