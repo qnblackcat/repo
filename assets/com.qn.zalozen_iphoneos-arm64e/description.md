@@ -9,7 +9,7 @@ Cài đặt nằm ngay trong Zalo: **Cài đặt → ZaloZen**; hoặc giữ nú
 **Tính năng:**
 
 - **Thêm emoji:** nút `+` trên thanh reaction mở bảng chọn emoji đầy đủ (có Yêu thích và Gần đây).
-- **Ẩn quảng cáo:** ẩn các dòng quảng cáo (Media Box, Business Box, zCloud, zBusiness, Zalo Sticker) khỏi danh sách chat.
+- **Ẩn quảng cáo:** ẩn các dòng quảng cáo (Media Box, Business Box, zCloud, zBusiness, Zalo Sticker) khỏi danh sách chat, và quảng cáo trong tab Tường nhà (Newsfeed).
 - **Ẩn Tab Newsfeed, Discovery**.
 - **Cho phép lưu Avatar và ảnh bìa; cho phép lưu Story**.
 - **Ẩn thông tin:** Ẩn Avatar, tên người gửi, tin nhắn gần nhất trong danh sách chat.
